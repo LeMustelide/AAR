@@ -1,0 +1,1 @@
+insert into ETUDIANT(NUMETU,NOM,PRENOM) VALUES ("o01",'Valjean','Jean');

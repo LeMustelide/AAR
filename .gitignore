@@ -1,0 +1,90 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+
+# Gradle Wrapper
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/cache/
+.gradle/gradle/
+.gradle/gradle.log
+.gradle/taskHistory/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Eclipse
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.metadata/
+releases/
+.classpath
+.project
+.loadpath
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Coverage
+*.cover
+*.coverage
+.coverage/*
+
+# Generated files
+*.log
+*.json
+*.html
+*.css
+*.js
+*.svg

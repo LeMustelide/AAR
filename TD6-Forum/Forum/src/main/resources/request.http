@@ -1,0 +1,18 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST http://localhost:8081/api/utilisateurs/0/questions
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMCIsImV4cCI6MTczMjIyMjM0MywiaWF0IjoxNzMyMTg2MzQzLCJlbWFpbCI6IkRvZUB1bml2LW9ybGVhbnMuZnIiLCJzY29wZSI6IkVUVURJQU5UIEVOU0VJR05BTlQifQ.7LpdF07GJr8kC4Sxkz_MVYOCS3x-J_Mo8I-UoiyRgdk
+Content-Type: application/json
+
+{
+    "libelleQuestion": "Quelle est la capitale de la France ?"
+}
+
+###
+
+GET http://localhost:8081/api/questions
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiMCIsImV4cCI6MTczMjIyMjM0MywiaWF0IjoxNzMyMTg2MzQzLCJlbWFpbCI6IkRvZUB1bml2LW9ybGVhbnMuZnIiLCJzY29wZSI6IkVUVURJQU5UIEVOU0VJR05BTlQifQ.7LpdF07GJr8kC4Sxkz_MVYOCS3x-J_Mo8I-UoiyRgdk
+
