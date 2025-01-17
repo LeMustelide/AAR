@@ -27,6 +27,12 @@ public class Facade {
     */
 
 
+    public record Detail (
+            String details,
+            String email
+    ) { }
+
+    @Transactional
     public boolean checkLP(String login,String password) {
         // On va maintenant chercher l'utilisateur dans la BD à partir du login
         MyUser user=em.find(MyUser.class,login);
@@ -35,11 +41,12 @@ public class Facade {
         } else {
             return (user.getPassword().equals(password));
         }
-   }
+    }
 
-   @Transactional
-   public MyUser createUser(String login, String password) throws UserAllreadyExistsException {
-        MyUser user=em.find(MyUser.class,login);
+    public MyUser createUser(String login, String password) throws UserAllreadyExistsException {
+       MyUser user=em.find(MyUser.class,login);
+
+        Detail detail = em.createQuery("SELECT NEW services.Facade$Detail(a.id, a.login) From MyUser a Where a.login = '343'", Detail.class).getSingleResult();
         if (user!=null) {
             throw new UserAllreadyExistsException();
         }

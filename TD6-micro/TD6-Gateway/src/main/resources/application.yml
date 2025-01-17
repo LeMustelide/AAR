@@ -7,11 +7,17 @@ spring:
         - id: service-authentification
           uri: lb://service-authentification
           predicates:
-            - Path=/service1/**
+            - Path=/api/utilisateurs/**
+          filters:
+            - RewritePath=/(?<segment>/?.*), /$\{segment}
         - id: service-forum
           uri: lb://service-forum
           predicates:
-            - Path=/service2/**
+            - Path=/api/questions/**
+          filters:
+            - RewritePath=/(?<segment>/?.*), /$\{segment}
+      default-filters:
+        - PreserveHostHeader
     consul:
       port: ${CONSUL_PORT:8500}
       host: ${CONSUL_HOST:localhost}
